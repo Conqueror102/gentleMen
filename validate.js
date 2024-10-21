@@ -15,11 +15,8 @@ function validateForm(event) {
     let password = document.getElementById("loginPassword").value;
     let confirmPassword = document.getElementById("confirmPassword").value;
 
-    // Username validation (alphanumeric and between 3 and 15 characters)
-    let usernameRegex = /^[a-zA-Z0-9]{3,15}$/;
-    if (!usernameRegex.test(username)) {
-      throw new Error("Username must be alphanumeric and between 3 and 15 characters.");
-    }
+   
+
 
     // Email validation
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
